@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&family=Caveat:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-script: "Caveat", cursive;
+  
+  --color-background: #F3F4F6;
+  --color-foreground: #000000;
+  --color-primary: #F27D26;
+  --color-secondary: #10B981;
+  --color-accent: #F27D26;
+  --color-muted: #E5E7EB;
+  --color-border: #000000;
+
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 48px;
+  --radius-2xl: 64px;
+  
+  --shadow-none: 0 0 #0000;
+  --shadow-sm: var(--shadow-none);
+  --shadow-md: var(--shadow-none);
+  --shadow-lg: var(--shadow-none);
+  --shadow-xl: var(--shadow-none);
+  --shadow-2xl: var(--shadow-none);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
