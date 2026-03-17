@@ -6,6 +6,23 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+// 导入图片
+import profileImage from './assets/profile.jpg';
+import yanImage from './assets/yan.jpg';
+import gloveGif from './assets/手套1.gif';
+import groupPhoto from './assets/合照1.png';
+import certificate from './assets/奖状.png';
+import leaderImage from './assets/负责人.png';
+import volunteerImage from './assets/志愿服务.png';
+import patentImage from './assets/专利.png';
+import lessonPlan from './assets/教案.png';
+import internshipImage from './assets/实习1.png';
+import school34 from './assets/34.png';
+import competition from './assets/大赛.jpg';
+import volunteer1 from './assets/志愿1.png';
+import volunteer2 from './assets/志愿2.png';
+import clubImage from './assets/社团.png';
+
 const App = () => {
   const [activeTab, setActiveTab] = useState('home');
 
@@ -112,7 +129,7 @@ const App = () => {
             <div className="lg:col-span-5 relative">
               <div className="bg-primary aspect-square rounded-[4rem] p-12 flex flex-col justify-between relative overflow-hidden group">
                 <div className="w-full h-full flex items-center justify-center">
-                  <img src="/assets/profile.jpg" alt="Profile" className="w-full h-full object-cover rounded-2xl transition-all duration-500 group-hover:scale-105 group-hover:rotate-1" />
+                  <img src={profileImage} alt="Profile" className="w-full h-full object-cover rounded-2xl transition-all duration-500 group-hover:scale-105 group-hover:rotate-1" />
                 </div>
                 <div className="absolute top-8 right-8 w-16 h-16 bg-black rounded-full flex items-center justify-center text-white">
                   <Globe size={24} />
@@ -157,7 +174,7 @@ const App = () => {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="px-6 py-2 bg-muted rounded-full text-[10px] font-black uppercase tracking-widest">本科在读</div>
-                    <img src="/assets/yan.jpg" alt="Yan" className="w-32 h-32 rounded-lg object-cover object-[50%_20%]" />
+                    <img src={yanImage} alt="Yan" className="w-32 h-32 rounded-lg object-cover object-[50%_20%]" />
                   </div>
                 </div>
 
@@ -290,14 +307,14 @@ const App = () => {
 
               <div className="lg:col-span-5 space-y-4 mt-8">
                 <div className="w-full h-60 rounded-lg overflow-hidden border border-foreground/5 bg-white p-1">
-                  <img src="/assets/手套1.gif" alt="手套实物图/Unity场景" className="w-full h-full object-cover rounded" />
+                  <img src={gloveGif} alt="手套实物图/Unity场景" className="w-full h-full object-cover rounded" />
                 </div>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="w-full h-40 rounded-lg overflow-hidden border border-foreground/5 bg-white p-1">
-                    <img src="/assets/合照1.png" alt="获奖证书 A" className="w-full h-full object-cover rounded" />
+                    <img src={groupPhoto} alt="获奖证书 A" className="w-full h-full object-cover rounded" />
                   </div>
                   <div className="w-full h-40 rounded-lg overflow-hidden border border-foreground/5 bg-white p-1">
-                    <img src="/assets/奖状.png" alt="获奖证书 B" className="w-full h-full object-cover rounded" />
+                    <img src={certificate} alt="获奖证书 B" className="w-full h-full object-cover rounded" />
                   </div>
                 </div>
               </div>
@@ -333,10 +350,10 @@ const App = () => {
               
               <div className="grid grid-cols-2 gap-4">
                 <div className="w-full h-48 rounded-lg overflow-hidden border border-foreground/5 bg-white p-1">
-                  <img src="/assets/负责人.png" alt="负责人" className="w-full h-full object-cover rounded" />
+                  <img src={leaderImage} alt="负责人" className="w-full h-full object-cover rounded" />
                 </div>
                 <div className="w-full h-48 rounded-lg overflow-hidden border border-foreground/5 bg-white p-1">
-                  <img src="/assets/志愿服务.png" alt="志愿服务" className="w-full h-full object-cover rounded" />
+                  <img src={volunteerImage} alt="志愿服务" className="w-full h-full object-cover rounded" />
                 </div>
               </div>
             </div>
@@ -353,7 +370,7 @@ const App = () => {
                     <p className="text-sm text-white/30 uppercase tracking-widest font-black italic">申请号: 202411082288.1</p>
                   </div>
                   <div className="w-full h-56 rounded-lg overflow-hidden border border-white/10">
-                    <img src="/assets/专利.png" alt="专利图片" className="w-full h-full object-cover" />
+                    <img src={patentImage} alt="专利图片" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 
@@ -417,10 +434,10 @@ const App = () => {
                 </div>
                 <div className="lg:col-span-4 space-y-4">
                   <div className="w-full h-56 rounded-2xl overflow-hidden border border-foreground/5 bg-white p-1">
-                    <img src="/assets/教案.png" alt="清华中学教学 A" className="w-full h-full object-cover rounded" />
+                    <img src={lessonPlan} alt="清华中学教学 A" className="w-full h-full object-cover rounded" />
                   </div>
                   <div className="w-full h-56 rounded-2xl overflow-hidden border border-foreground/5 bg-white p-1">
-                    <img src="/assets/实习1.png" alt="清华中学教学 B" className="w-full h-full object-cover rounded" />
+                    <img src={internshipImage} alt="清华中学教学 B" className="w-full h-full object-cover rounded" />
                   </div>
                 </div>
               </div>
@@ -437,7 +454,7 @@ const App = () => {
                 <p className="text-lg text-foreground/60 leading-relaxed mb-8 font-bold">协助完成八年级信息技术教学任务，覆盖学生200余人，自主备课并独立授课3节，互动式教学反响热烈。</p>
                 <div className="mt-auto">
                   <div className="w-full h-48 rounded-2xl overflow-hidden border border-foreground/5 bg-white p-1">
-                    <img src="/assets/34.png" alt="三十四中校园合影" className="w-full h-full object-cover object-[50%_70%] rounded" />
+                    <img src={school34} alt="三十四中校园合影" className="w-full h-full object-cover object-[50%_70%] rounded" />
                   </div>
                 </div>
               </div>
@@ -451,7 +468,7 @@ const App = () => {
                 <p className="text-lg text-white/60 leading-relaxed mb-8 font-bold">担任市场运营与产品测试实习生，参与产品迭代与测试。</p>
                 <div className="mt-auto">
                   <div className="w-full h-48 rounded-2xl overflow-hidden border border-foreground/5 bg-white p-1">
-                    <img src="/assets/大赛.jpg" alt="企业展会照片" className="w-full h-full object-cover object-[50%_70%] rounded" />
+                    <img src={competition} alt="企业展会照片" className="w-full h-full object-cover object-[50%_70%] rounded" />
                   </div>
                 </div>
               </div>
@@ -491,10 +508,10 @@ const App = () => {
                   </div>
                   <div className="space-y-4">
                     <div className="w-full h-48 rounded-2xl overflow-hidden border border-foreground/5 bg-white p-1">
-                      <img src="/assets/志愿1.png" alt="志愿者活动1" className="w-full h-full object-cover rounded" />
+                      <img src={volunteer1} alt="志愿者活动1" className="w-full h-full object-cover rounded" />
                     </div>
                     <div className="w-full h-48 rounded-2xl overflow-hidden border border-foreground/5 bg-white p-1">
-                      <img src="/assets/志愿2.png" alt="志愿者活动2" className="w-full h-full object-cover rounded" />
+                      <img src={volunteer2} alt="志愿者活动2" className="w-full h-full object-cover rounded" />
                     </div>
                   </div>
                 </div>
@@ -510,7 +527,7 @@ const App = () => {
                 <p className="text-white/60 text-base font-black uppercase tracking-widest mb-6 italic">从 0 到 1 组建社团</p>
                 <p className="text-lg leading-tight font-bold opacity-90 mb-8">吸纳社员 120+，年组织研学 20+场，个人 2 次获得“优秀社团成员”称号，</p>
                 <div className="w-full h-32 rounded-2xl overflow-hidden border border-white/20 bg-white p-1">
-                  <img src="/assets/社团.png" alt="社团活动合影" className="w-full h-full object-cover rounded" />
+                  <img src={clubImage} alt="社团活动合影" className="w-full h-full object-cover rounded" />
                 </div>
               </div>
               <div className="bg-foreground rounded-[2.5rem] p-10 text-white transition-all hover:scale-[1.05] relative overflow-hidden">
